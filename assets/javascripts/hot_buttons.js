@@ -361,8 +361,8 @@ jQuery(document).ready(function() {
     render_button: function() {
       var t = this;
       
-      //var button = new Element('button', {'class': 'action'})
-      var button = new Element('button', {'class': 'action'})  //collapse_section'})
+      //var button = new Element('button', {'class': 'action btn'})
+      var button = new Element('button', {'class': 'action btn'})  //collapse_section'})
         .insert(this.config.get('caption'));
       button.config = this.config;
 
@@ -398,7 +398,7 @@ jQuery(document).ready(function() {
 
       hot_button.setStyle({opacity: 1});
 
-      var submit_button = new Element('button', {'class': 'submit'})
+      var submit_button = new Element('button', {'class': 'submit btn btn-xs'})
         .insert(t._('submit'));
       submit_button.config = hot_button.config;
       Event.observe(submit_button, 'click', function(event) {
@@ -419,7 +419,7 @@ jQuery(document).ready(function() {
       additional_wrapper.insert(submit_button);
 
       var close_button = new Element('a', {
-        'class': 'icon_close',
+        'class': 'bsicon-remove-sign',
         href: 'javascript:void(0)'
       });
       Event.observe(close_button, 'click', function(e) {
@@ -692,7 +692,7 @@ jQuery(document).ready(function() {
     render_button: function() {
       var t = this;
       
-      var start_working = new Element('button', {'class': 'action'})
+      var start_working = new Element('button', {'class': 'action btn'})
         .update(this.config.get('start'));
       start_working.config = this.config;
       
@@ -1043,7 +1043,7 @@ jQuery(document).ready(function() {
     
     render_button: function() {
       var t = this;
-      var button = new Element('button', {'class': 'action'})
+      var button = new Element('button', {'class': 'action btn'})
         .insert(this.config.get('caption'));
       button.config = this.config;
       button.kind = this.kind;
