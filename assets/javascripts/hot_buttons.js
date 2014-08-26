@@ -419,7 +419,7 @@ jQuery(document).ready(function() {
       additional_wrapper.insert(submit_button);
 
       var close_button = new Element('a', {
-        'class': 'bsicon-remove-sign',
+        'class': 'icon_close',
         href: 'javascript:void(0)'
       });
       Event.observe(close_button, 'click', function(e) {
